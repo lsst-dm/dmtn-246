@@ -18,12 +18,21 @@ There is a requirement to allow external code to run on Rubin images. This requi
 Introduction
 ============
 
-:cite:`dmtn-223` outlines plans for batch access to Rubin data. 
+:cite:`DMTN-223` outlines plans for batch access to Rubin data. 
 This would be via the USDF and using the Rubin pipelines.
 There is still  a requirement "DMS-REQ-0128" to allow "means for applying user-provided processing to image data". 
 This we feel could be met by demonstrating the possibility to extract FITS files from the butler repository and use a third party application on them. 
 
 This is demonstrated in the notebook in the repository of this technote :file:`. 
+
+External code
+=============
+The notebook environment allows a user to bring in their own or third party code. 
+For this excercise we will use sextractor. 
+This has a conda install. 
+Having logged in to _usdf-rsp.slac.stanford.edu/nb: the USDF RSP Notebook Enviroment" and opening a new terminal type:
+
+:cmd:  conda install -c conda-forge astromatic-source-extractor
 
 
 .. rubric:: References
