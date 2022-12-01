@@ -15,15 +15,17 @@ Abstract
 
 There is a requirement to allow external code to run on Rubin images. This requires at least accessing the images via butler and creating FITS files or such for an external program. This note provides some background and a notebook approach to doing this.
 
-Add content here
-================
+Introduction
+============
 
-Add content here.
-See the `reStructuredText Style Guide <https://developer.lsst.io/restructuredtext/style.html>`__ to learn how to create sections, links, images, tables, equations, and more.
+:cite:`dmtn-223` outlines plans for batch access to Rubin data. 
+This would be via the USDF and using the Rubin pipelines.
+Threre is still  a requirement "DMS-REQ-0128" to allow "means for applying user-provided processing to image data". 
+This we feel could be met by deomstrating the possibility to extract FITS files from the butler repository and use a third party applicaiton on them. 
 
-.. Make in-text citations with: :cite:`bibkey`.
-.. Uncomment to use citations
-.. .. rubric:: References
-.. 
-.. .. bibliography:: local.bib lsstbib/books.bib lsstbib/lsst.bib lsstbib/lsst-dm.bib lsstbib/refs.bib lsstbib/refs_ads.bib
-..    :style: lsst_aa
+This is demostrated in the notebook in the repository of this technote :file:`. 
+
+
+.. rubric:: References
+.. bibliography:: local.bib lsstbib/books.bib lsstbib/lsst.bib lsstbib/lsst-dm.bib lsstbib/refs.bib lsstbib/refs_ads.bib
+    :style: lsst_aa
