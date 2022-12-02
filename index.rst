@@ -23,7 +23,7 @@ This would be via the USDF and using the Rubin pipelines.
 There is still  a requirement "DMS-REQ-0128" to allow "means for applying user-provided processing to image data". 
 This we feel could be met by demonstrating the possibility to extract FITS files from the butler repository and use a third party application on them. 
 
-This is demonstrated in the notebook in the repository of this technote :file:`. 
+This is demonstrated in the notebook in the repository of this technote :file:`ExternalCode.ipynb`. 
 
 External code
 =============
