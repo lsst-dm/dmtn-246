@@ -2,8 +2,6 @@
 
 .. sectnum::
 
-.. Metadata such as the title, authors, and description are set in metadata.yaml
-
 .. TODO: Delete the note below before merging new content to the main branch.
 
 .. note::
@@ -25,14 +23,20 @@ This we feel could be met by demonstrating the possibility to extract FITS files
 
 This is demonstrated in the notebook in the repository of this technote :file:`ExternalCode.ipynb`. 
 
-External code
+External Code
 =============
-The notebook environment allows a user to bring in their own or third party code. 
-For this excercise we will use sextractor. 
+For this example we will use _usdf-rsp.slac.stanford.edu/nb: the USDF RSP Notebook Enviroment”.
+The notebook environment allows a user to bring in their own or third party code. For this excercise we will use sextractor. 
 This has a conda install. 
-Having logged in to _usdf-rsp.slac.stanford.edu/nb: the USDF RSP Notebook Enviroment" and opening a new terminal type:
+To make use of this you must install a local stack and conda-environment using the instructions in 
+`The pipeline guide <https://pipelines.lsst.io/install/newinstall.html>`__
 
-:cmd:  conda install -c conda-forge astromatic-source-extractor
+Having logged in to _usdf-rsp.slac.stanford.edu/nb: the USDF RSP Notebook Enviroment” and opening a new terminal type:
+
+cmd:
+
+    conda install -c conda-forge astromatic-source-extractor
+
 
 
 .. rubric:: References
