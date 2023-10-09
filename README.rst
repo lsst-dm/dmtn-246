@@ -14,7 +14,30 @@ Running external code with Rubin pipelines
 DMTN-246
 ========
 
-There is a requirement to allow external code to run on Rubin images. This requires at least accessing the images via butler and creating FITS files or such for an external program. This note provides some background and a notebook approach to doing this.
+This note covers two perspectives on accessing data in a Rubin middleware `Butler` from external code.
+
+Enabling end-user access to data extracted from a Butler
+--------------------------------------------------------
+
+There is a requirement to allow external code to run on Rubin images.
+This requires at least accessing the images via butler and creating FITS files or such for an external program.
+This note provides some background and a notebook approach to doing this.
+
+Running external executables under the control of a QuantumGraph pipeline
+-------------------------------------------------------------------------
+
+Given data that are already in a Butler, there may be circumstances in which
+it's desirable for users, or even in some cases, project staff, to run an
+external executable on those data, and to do so under the control of a
+Pipeline run via QuantumGraph.
+This might be, for instance, because the natural way to control the iteration
+through the input data is by traversing a collection.
+
+Under some circumstances it may even be desirable to return outputs from
+the external executable to the Butler.
+
+The second part of this note addresses the possible design of a PipelineTask
+that serves as a wrapper for an external executable.
 
 **Links:**
 
